@@ -259,7 +259,7 @@ export class SearchkitManager {
   }
 
   getHitsCount(){
-    return get(this.results, ["hits", "total"], 0)
+    return get(this.results, ["hits", "total", "value"], 0)
   }
 
   getTime() {
