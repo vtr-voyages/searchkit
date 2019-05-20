@@ -8514,6 +8514,11 @@ scss-tokenizer@^0.2.3:
     js-base64 "^2.1.8"
     source-map "^0.4.2"
 
+searchkit-daterangefilter@0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/searchkit-daterangefilter/-/searchkit-daterangefilter-0.0.2.tgz#b61a34bcb5f20ea72feb13321c0630c96aa98f1e"
+  integrity sha1-tho0vLXyDqcv6xMyHAYwyWqpjx4=
+
 section-iterator@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/section-iterator/-/section-iterator-2.0.0.tgz#bf444d7afeeb94ad43c39ad2fb26151627ccba2a"

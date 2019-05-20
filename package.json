@@ -1,61 +1,63 @@
 {
-    "private": true,
-    "name": "searchkit",
-    "keywords": [
-      "elasticsearch",
-      "react",
-      "ui components",
-      "search",
-      "framework",
-      "library",
-      "widgets"
-    ],
-    "homepage": "http://www.searchkit.co",
-    "bugs": {
-        "url": "https://github.com/searchkit/searchkit/issues"
+  "private": true,
+  "name": "searchkit",
+  "keywords": [
+    "elasticsearch",
+    "react",
+    "ui components",
+    "search",
+    "framework",
+    "library",
+    "widgets"
+  ],
+  "homepage": "http://www.searchkit.co",
+  "bugs": {
+    "url": "https://github.com/searchkit/searchkit/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/searchkit/searchkit.git"
+  },
+  "scripts": {
+    "lerna": "lerna",
+    "build": "lerna run build",
+    "clean": "lerna clean",
+    "publish": "node ./scripts/deploy.js"
+  },
+  "authors": [
+    {
+      "name": "Joseph McElroy",
+      "email": "phoey1@gmail.com"
     },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/searchkit/searchkit.git"
-    },
-    "scripts": {
-        "lerna": "lerna",
-        "build": "lerna run build",
-        "clean": "lerna clean",
-        "publish": "node ./scripts/deploy.js"
-    },
-    "authors": [
-        {
-            "name": "Joseph McElroy",
-            "email": "phoey1@gmail.com"
-        },
-        {
-            "name": "Siavash Etemadieh",
-            "email": "ssetem@gmail.com"
-        }
-    ],
-    "contributors": [
-        {
-            "name": "Gregory Potdevin",
-            "email": "gregory.potdevin@gmail.com"
-        }
-    ],
-    "license": "Apache-2.0",
-    "dependencies": {},
-    "devDependencies": {
-        "cross-spawn": "^6.0.5",
-        "cz-conventional-changelog": "^2.1.0",
-        "lerna": "^3.1.4"
-    },
-    "workspaces": [
-        "packages/*"
-    ],
-    "resolutions": {
-        "@types/react": "^16.4.12"
-    },
-    "config": {
-        "commitizen": {
-            "path": "./node_modules/cz-conventional-changelog"
-        }
+    {
+      "name": "Siavash Etemadieh",
+      "email": "ssetem@gmail.com"
     }
+  ],
+  "contributors": [
+    {
+      "name": "Gregory Potdevin",
+      "email": "gregory.potdevin@gmail.com"
+    }
+  ],
+  "license": "Apache-2.0",
+  "dependencies": {
+    "searchkit-daterangefilter": "0.0.2"
+  },
+  "devDependencies": {
+    "cross-spawn": "^6.0.5",
+    "cz-conventional-changelog": "^2.1.0",
+    "lerna": "^3.1.4"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "resolutions": {
+    "@types/react": "^16.4.12"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
 }
