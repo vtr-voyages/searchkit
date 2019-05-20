@@ -9,6 +9,12 @@ const allItem = {
     key: "$all", label: "All"
 };
 export class MenuFilter extends FacetFilter {
+    constructor(props) {
+        super(props);
+        this.state = {
+            placeholder: props.placeholder || "All"
+        };
+    }
     toggleFilter(option) {
         if (option === allItem.key || this.accessor.state.contains(option)) {
             this.accessor.state = this.accessor.state.clear();
@@ -28,7 +34,7 @@ export class MenuFilter extends FacetFilter {
     getItems() {
         const all = {
             key: allItem.key,
-            label: allItem.label,
+            label: this.state.placeholder,
             doc_count: this.accessor.getDocCount()
         };
         return concat([all], super.getItems());

@@ -19,7 +19,7 @@ export class Pagination extends SearchkitComponent {
         return Number(this.accessor.state.getValue()) || 1;
     }
     getTotalPages() {
-        return Math.ceil(get(this.getResults(), "hits.total", 1)
+        return Math.ceil(get(this.getResults(), "hits.total.value", 1)
             /
                 get(this.getQuery(), "query.size", 10));
     }

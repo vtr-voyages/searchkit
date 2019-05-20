@@ -185,7 +185,7 @@ export class SearchkitManager {
         return get(this.results, ["hits", "hits"], []);
     }
     getHitsCount() {
-        return get(this.results, ["hits", "total"], 0);
+        return get(this.results, ["hits", "total", "value"], 0);
     }
     getTime() {
         return get(this.results, "took", 0);
