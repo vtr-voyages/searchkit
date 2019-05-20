@@ -43,8 +43,19 @@
   ],
   "license": "Apache-2.0",
   "dependencies": {
-    "searchkit-daterangefilter": "0.0.2"
+    "@types/history": "^4.6.0",
+    "@types/lodash": "^4.14.77",
+    "axios": "^0.16.2",
+    "history": "4.7.2",
+    "immutability-helper": "^2.4.0",
+    "lodash": "^4.17.5",
+    "prop-types": "^15.5.8",
+    "qs": "6.4.0",
+    "rc-slider": "^8.3.1"
   },
+  "typings": "lib/index.d.ts",
+  "module": "lib/index.js",
+  "main": "lib/index.js",
   "devDependencies": {
     "cross-spawn": "^6.0.5",
     "cz-conventional-changelog": "^2.1.0",
