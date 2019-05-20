@@ -1,6 +1,7 @@
 {
   "private": true,
   "name": "searchkit",
+  "version" : "2.3.15",
   "keywords": [
     "elasticsearch",
     "react",
