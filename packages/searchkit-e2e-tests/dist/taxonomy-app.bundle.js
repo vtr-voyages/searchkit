@@ -2247,7 +2247,7 @@ eval("Object.defineProperty(exports, \"__esModule\", { value: true });\nvar isAr
 /* 357 */
 /***/ (function(module, exports) {
 
-eval("Object.defineProperty(exports, \"__esModule\", { value: true });\nfunction FilteredQuery(filtered) {\n    return { filtered: filtered };\n}\nexports.FilteredQuery = FilteredQuery;\n//# sourceMappingURL=FilteredQuery.js.map\n\n//////////////////\n// WEBPACK FOOTER\n// ../searchkit/lib/core/query/query_dsl/compound/FilteredQuery.js\n// module id = 357\n// module chunks = 0 1 2 3 4 5 6\n\n//# sourceURL=webpack:///../searchkit/lib/core/query/query_dsl/compound/FilteredQuery.js?");
+eval("Object.defineProperty(exports, \"__esModule\", { value: true });\nfunction FilteredQuery(bool) {\n    return { bool: bool };\n}\nexports.FilteredQuery = FilteredQuery;\n//# sourceMappingURL=FilteredQuery.js.map\n\n//////////////////\n// WEBPACK FOOTER\n// ../searchkit/lib/core/query/query_dsl/compound/FilteredQuery.js\n// module id = 357\n// module chunks = 0 1 2 3 4 5 6\n\n//# sourceURL=webpack:///../searchkit/lib/core/query/query_dsl/compound/FilteredQuery.js?");
 
 /***/ }),
 /* 358 */
