@@ -1,4 +1,4 @@
-export function FilteredQuery(filtered) {
-    return { filtered };
+export function FilteredQuery(bool) {
+    return { bool };
 }
 //# sourceMappingURL=FilteredQuery.js.map
