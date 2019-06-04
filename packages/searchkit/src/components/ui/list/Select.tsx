@@ -43,7 +43,7 @@ export class Select extends React.PureComponent<ListProps, any> {
 
     return (
       <div className={bemBlocks.container().mix(className).state({ disabled }) }>
-        <select onChange={this.onChange} value={this.getSelectedValue()}>
+        <select className="browser-default" onChange={this.onChange} value={this.getSelectedValue()}>
           {map(items, ({key, label, title, disabled, doc_count}) => {
             var text = translate(label || title || key)
             if (showCount && doc_count !== undefined) text += ` (${countFormatter(doc_count)})`

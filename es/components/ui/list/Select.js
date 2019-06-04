@@ -24,7 +24,7 @@ export class Select extends React.PureComponent {
             container: block(mod).el
         };
         return (React.createElement("div", { className: bemBlocks.container().mix(className).state({ disabled }) },
-            React.createElement("select", { onChange: this.onChange, value: this.getSelectedValue() }, map(items, ({ key, label, title, disabled, doc_count }) => {
+            React.createElement("select", { className: "browser-default", onChange: this.onChange, value: this.getSelectedValue() }, map(items, ({ key, label, title, disabled, doc_count }) => {
                 var text = translate(label || title || key);
                 if (showCount && doc_count !== undefined)
                     text += ` (${countFormatter(doc_count)})`;
