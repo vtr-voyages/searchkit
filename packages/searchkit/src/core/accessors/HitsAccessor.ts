@@ -19,7 +19,7 @@ export class HitsAccessor extends Accessor {
   scrollIfNeeded(){
     if(this.searchkit.hasHitsChanged()){
       if(this.options.scrollTo){
-  			document.querySelector(this.getScrollSelector()).scrollTop = 0;
+  			window.scrollTo(0, 0);
       }
     }
   }
