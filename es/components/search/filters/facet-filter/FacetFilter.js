@@ -90,10 +90,10 @@ FacetFilter.propTypes = FacetFilterPropTypes;
 FacetFilter.defaultProps = {
     listComponent: CheckboxItemList,
     containerComponent: Panel,
-    size: 50,
+    size: 1000,
     collapsable: false,
     showCount: true,
-    showMore: true,
+    showMore: false,
     bucketsTransform: identity
 };
 //# sourceMappingURL=FacetFilter.js.map

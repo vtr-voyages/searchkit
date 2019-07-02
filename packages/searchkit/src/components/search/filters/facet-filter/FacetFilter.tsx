@@ -22,10 +22,10 @@ export class FacetFilter extends SearchkitComponent<FacetFilterProps, any> {
   static defaultProps = {
     listComponent: CheckboxItemList,
     containerComponent: Panel,
-    size: 50,
+    size: 1000,
     collapsable: false,
     showCount: true,
-    showMore: true,
+    showMore: false,
     bucketsTransform:identity
   }
 
