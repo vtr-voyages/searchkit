@@ -14,26 +14,11 @@ export interface InitialViewDisplayProps {
 	bemBlocks:any
 }
 
-export class InitialViewDisplay extends React.PureComponent<InitialViewDisplayProps, any>{
-	render(){
-		return (
-	 		<div className={this.props.bemBlocks.container()}>
-	 			<div data-qa="initial-loading" className={this.props.bemBlocks.container("initial-loading")}></div>
-	 		</div>
-	 	)
-	}
-}
-
-
 export interface InitialLoaderprops extends SearchkitComponentProps{
 	component?: RenderComponentType<InitialViewDisplayProps>
 }
 
 export class InitialLoader extends SearchkitComponent<InitialLoaderprops, any> {
-	static defaultProps = {
-		component:InitialViewDisplay
-	}
-
 	defineBEMBlocks() {
 		let block = (this.props.mod || "sk-initial-loader")
 		return {

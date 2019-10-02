@@ -1,13 +1,5 @@
-import * as React from "react";
-import * as PropTypes from "prop-types";
 import { SearchkitComponent, renderComponent } from "../../../../core";
 const defaults = require("lodash/defaults");
-export class InitialViewDisplay extends React.PureComponent {
-    render() {
-        return (React.createElement("div", { className: this.props.bemBlocks.container() },
-            React.createElement("div", { "data-qa": "initial-loading", className: this.props.bemBlocks.container("initial-loading") })));
-    }
-}
 export class InitialLoader extends SearchkitComponent {
     defineBEMBlocks() {
         let block = (this.props.mod || "sk-initial-loader");
@@ -24,10 +16,4 @@ export class InitialLoader extends SearchkitComponent {
         return null;
     }
 }
-InitialLoader.defaultProps = {
-    component: InitialViewDisplay
-};
-InitialLoader.propTypes = defaults({
-    component: PropTypes.func
-}, SearchkitComponent.propTypes);
 //# sourceMappingURL=InitialLoader.js.map
