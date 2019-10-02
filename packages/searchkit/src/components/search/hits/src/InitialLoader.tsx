@@ -33,9 +33,6 @@ export class InitialLoader extends SearchkitComponent<InitialLoaderprops, any> {
 	static defaultProps = {
 		component:InitialViewDisplay
 	}
-	static propTypes = defaults({
-		component:PropTypes.func
-	}, SearchkitComponent.propTypes)
 
 	defineBEMBlocks() {
 		let block = (this.props.mod || "sk-initial-loader")
